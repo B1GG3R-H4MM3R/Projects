@@ -1,0 +1,9 @@
+/* .row:nth-of-type(n+2){
+    border-style: inset;
+    border-width: medium;
+    border-color: navy;
+    margin-bottom: 5px;
+}
+.row:nth-of-type(n+6) {
+    background: orange;
+} */

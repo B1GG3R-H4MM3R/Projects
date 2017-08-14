@@ -1,0 +1,51 @@
+<div class="panel panel-group">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          
+          <button 
+          type="button" 
+          class="btn btn-default"
+          (click)="setDisplay(); setLog();"
+          >
+          Display Details
+        </button>
+          <p *ngIf = "pDisplay">
+        Truth is based on perspective and consensus of the sheep. 
+          </p>
+        </div>
+        <!-- <div>    
+          <app-sub-seg1></app-sub-seg1>    
+        </div> -->
+    </div>
+    
+    
+    <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title">Button Log</h3>
+        </div>
+        <div class="panel-body">
+            <div>
+                <p
+                  class="row"
+                  *ngFor= 'let x of buttonLog; let i = index'
+                  ng-class-odd="'odd'" 
+                  ng-class-even="'even'"
+                  [ngStyle]=" i > 0 ? {
+                    'color': i > 4 ? 'white' : 'black'
+                  , 'border-style': 'inset'
+                  , 'border-width' : 'medium'
+                  , 'border-color' : 'navy'
+                  , 'margin-bottom' : '5px'
+                  , 'background' : i > 4 ? 'orange' : 'white'
+                  , 'text-align' : 'center'
+                } : {} ">
+                  {{x}}
+                </p>
+              </div>    
+            </div>
+    
+    
+    </div>

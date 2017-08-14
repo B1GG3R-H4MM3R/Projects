@@ -1,0 +1,10 @@
+<div>
+  <p
+    class="row"
+    *ngFor= 'let x of buttonLog; let i = index'
+    ng-class-odd="'odd'" 
+    ng-class-even="'even'"
+    ng-style="'color': 'red'">
+    {{x}}
+  </p>
+</div>
